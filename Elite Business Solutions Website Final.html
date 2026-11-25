@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Elite Business Solutions | MIS, Power BI Dashboards & Finance Support</title>
+<meta name="description" content="Elite Business Solutions helps businesses worldwide gain financial clarity with MIS reporting, Power BI dashboards, finance automation, bookkeeping, fractional CFO and virtual assistant support.">
+<meta property="og:title" content="Elite Business Solutions: Data, composed.">
+<meta property="og:description" content="MIS, dashboards and finance support for growing businesses.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Elite Business Solutions","email":"info@elitebusinessolution.com","areaServed":"Worldwide","sameAs":["https://www.linkedin.com/company/elite-management-firm"],"description":"MIS reporting, Power BI dashboards, finance automation, bookkeeping, fractional CFO and virtual assistant services."}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B3032;--bg2:#082426;--ink:#F3F7F6;--mute:#A8C4C2;--teal:#087F8C;--em:#00B992;--line:rgba(0,185,146,.28);--st:env(safe-area-inset-top,0px);--sb:env(safe-area-inset-bottom,0px);--serif:"Cormorant Garamond","Iowan Old Style",Palatino,serif;--sans:Outfit,system-ui,-apple-system,"Segoe UI",sans-serif;box-sizing:border-box;padding-top:var(--st);padding-bottom:var(--sb);color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B3032}}
+:root[data-theme="dark"]{--bg:#0B3032}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--st) + 84px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.5 var(--sans)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:var(--st);background:var(--bg2);z-index:55}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:500;line-height:1.05;text-wrap:balance;margin:0 0 .5em}
+h1{font-size:3rem}h2{font-size:2.25rem}h3{font-size:1.875rem}
+@media (min-width:640px){h1{font-size:3.75rem}h2{font-size:3rem}}
+@media (min-width:1024px){h1{font-size:4.5rem}}
+h1.sv{font-size:2.25rem}@media (min-width:640px){h1.sv{font-size:3rem}}
+h1 em{font-style:italic}
+p{margin:0 0 1em;color:var(--mute);max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--em);outline-offset:3px}
+.eyebrow{font:500 .75rem/1.5 var(--sans);text-transform:uppercase;letter-spacing:.18em;color:var(--em);margin:0 0 18px;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}.alt{background:var(--bg2)}.pg{padding:72px 0 56px}
+.crumbs{font-size:.875rem;margin-bottom:22px}.crumbs a{color:var(--em);text-decoration:none}
+header{position:sticky;top:var(--st);z-index:50;background:rgba(11,48,50,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font:500 1.6rem var(--serif);letter-spacing:.04em}
+.lf{display:none;font-size:1.2rem;letter-spacing:.16em}
+@media (min-width:1240px){.lf{display:inline}.ls{display:none}}
+.links{display:flex;gap:24px;align-items:center}
+.links>a,.ddb{text-decoration:none;color:var(--mute);font:400 .875rem var(--sans);background:none;border:0;cursor:pointer;padding:8px 0}
+.links>a:hover,.ddb:hover{color:var(--em)}
+.dd{position:relative}.ddm{display:none;position:absolute;top:100%;left:-12px;min-width:270px;background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:10px}
+.dd:hover .ddm,.dd:focus-within .ddm{display:block}
+.ddm a{display:block;padding:9px 14px;border-radius:8px;text-decoration:none;font-size:.875rem;color:var(--ink)}.ddm a:hover{background:rgba(0,185,146,.12)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 30px;border-radius:999px;font:500 .875rem var(--sans);text-decoration:none;border:1px solid var(--em);cursor:pointer;color:#06231F;background:var(--em);transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,185,146,.35)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}.btn.ghost:hover{border-color:var(--em)}
+.btn.sm{padding:10px 22px}
+#menuBtn{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:9px 18px;font:500 .875rem var(--sans);cursor:pointer}
+#menu{display:none;position:fixed;inset:0;z-index:70;background:var(--bg2);padding:calc(var(--st) + 80px) 28px 28px;flex-direction:column;gap:10px;overflow:auto}
+#menu.open{display:flex}#menu a{font:500 1.75rem var(--serif);text-decoration:none}
+.brand-big{display:block;font:500 clamp(1.6rem,4.4vw,2.75rem)/1.1 var(--serif);letter-spacing:.14em;margin:0 0 22px}
+.hero{min-height:86vh;display:flex;align-items:center;padding:72px 0}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.lead{font-size:1.125rem}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.trust{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:30px;font-size:.875rem;color:var(--mute)}
+.bars{display:flex;align-items:flex-end;gap:6%;height:400px;padding:0 10%}
+.bars i{flex:1;border-radius:14px;animation:rise 1.5s cubic-bezier(.2,.8,.2,1) both}
+.bars i:nth-child(1){height:34%;background:#066675}.bars i:nth-child(2){height:60%;background:var(--teal);animation-delay:.25s}
+.bars i:nth-child(3){height:96%;background:var(--em);animation-delay:.5s;box-shadow:0 0 70px rgba(0,185,146,.4)}
+@keyframes rise{from{transform:scaleY(.04);transform-origin:bottom;opacity:0}to{transform-origin:bottom}}
+.head{max-width:720px;margin-bottom:44px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:10px 20px;color:var(--ink);font-size:.95rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{display:block;text-decoration:none;border:1px solid var(--line);border-radius:18px;padding:28px;background:rgba(255,255,255,.03);transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-5px);border-color:var(--em)}
+.card .serif{font-size:1.5rem;line-height:1.15;margin:0 0 10px}.card p{font-size:.95rem;margin:0 0 14px}.card .more{color:var(--em);font-size:.875rem;font-weight:500}
+.toggle{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:5px;margin-bottom:28px}
+.toggle button{border:0;background:none;color:var(--mute);padding:11px 26px;border-radius:999px;font:500 .875rem var(--sans);cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--em);color:#06231F}
+.board{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.tile{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:14px;padding:24px;transition:all .6s cubic-bezier(.2,.8,.2,1)}
+.tile h3{font-size:1.5rem;margin-bottom:.3em}.tile p{font-size:.95rem;margin:0}
+.chaos .tile:nth-child(odd){transform:rotate(-2deg) translateY(8px);opacity:.6;border-style:dashed}
+.chaos .tile:nth-child(even){transform:rotate(1.6deg) translateY(-6px);opacity:.78}
+.chaos .tile:nth-child(3n){transform:rotate(2.6deg) translateX(6px)}
+.order .tile{border-color:var(--em);background:rgba(0,185,146,.09)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;counter-reset:s}
+.step{counter-increment:s;border-top:2px solid var(--em);padding-top:18px}
+.step::before{content:counter(s);font:500 1.125rem var(--serif);color:var(--em);display:block;margin-bottom:6px}
+.step h3{font-size:1.5rem}.step p{margin:0;font-size:.95rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:36px}
+.grid h3{border-bottom:1px solid var(--line);padding-bottom:10px}
+.tick{list-style:none;padding:0;margin:0 0 22px}
+.tick li{padding:8px 0 8px 24px;position:relative;color:var(--ink);border-bottom:1px solid rgba(255,255,255,.07)}
+.tick li::before,.pack li::before{content:"";position:absolute;left:2px;top:15px;width:9px;height:5px;border-left:2px solid var(--em);border-bottom:2px solid var(--em);transform:rotate(-45deg)}
+.note{border-left:2px solid var(--em);padding:6px 0 6px 18px;font-size:.875rem;color:var(--mute);margin:24px 0;max-width:70ch}
+.tt{border:1px solid var(--line);border-radius:18px;padding:30px;background:rgba(255,255,255,.03);margin:0}
+.tt q{display:block;font:500 1.4rem/1.25 var(--serif);quotes:none;margin-bottom:18px}
+.tt b{display:block;font-weight:500}.tt span{color:var(--mute);font-size:.875rem}
+.badge{display:inline-block;font:500 .75rem var(--sans);border:1px dashed var(--em);color:var(--em);padding:3px 10px;border-radius:999px;margin-bottom:14px}
+.packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.pack{border:1px solid var(--line);border-radius:20px;padding:34px 28px;display:flex;flex-direction:column;background:rgba(255,255,255,.025);transition:transform .3s,border-color .3s}
+.pack:hover{transform:translateY(-6px);border-color:var(--em)}
+.pack.hl{border-color:var(--em);background:linear-gradient(170deg,rgba(0,185,146,.13),rgba(8,127,140,.06))}
+.pack ul{list-style:none;padding:0;margin:14px 0 24px;flex:1}.pack li{padding:7px 0 7px 22px;position:relative;font-size:.9rem;color:var(--mute)}.pack li::before{top:13px}
+.pack .btn{width:100%}
+.fine{font-size:.875rem;margin-top:24px}
+.consult{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+form{display:grid;gap:14px;grid-template-columns:1fr 1fr}form .full{grid-column:1/-1}
+label{display:block;font:500 .75rem var(--sans);text-transform:uppercase;letter-spacing:.18em;color:var(--mute);margin-bottom:6px}
+input,select,textarea{width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--ink);font:400 1rem var(--sans)}
+select option{color:#06231F}textarea{min-height:110px;resize:vertical}
+.ok{display:none;color:var(--em);margin-top:12px}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{cursor:pointer;font:500 1.5rem var(--serif);list-style:none}details p{margin:10px 0 0}
+.final{text-align:center}.final p,.final h2{margin-left:auto;margin-right:auto}.final .cta-row{justify-content:center}
+footer{padding:56px 0 calc(40px + var(--sb));border-top:1px solid var(--line);font-size:.875rem;color:var(--mute)}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+footer a{display:block;text-decoration:none;padding:3px 0}footer a:hover{color:var(--em)}
+footer h4{font:500 .75rem var(--sans);text-transform:uppercase;letter-spacing:.18em;color:var(--em);margin:0 0 12px}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media (max-width:900px){.links{display:none}#menuBtn{display:block;position:relative;z-index:80}.hero .wrap,.two,.consult,footer .wrap{grid-template-columns:1fr}.bars{height:220px}section{padding:64px 0}form{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+<a class="logo" href="#home" aria-label="Elite Business Solutions home"><svg width="32" height="32" viewBox="0 0 34 34" aria-hidden="true"><rect x="2" y="18" width="7" height="14" rx="2" fill="#066675"/><rect x="13" y="11" width="7" height="21" rx="2" fill="#087F8C"/><rect x="24" y="2" width="7" height="30" rx="2" fill="#00B992"/></svg><span class="lf">ELITE BUSINESS SOLUTIONS</span><span class="ls">EBS</span></a>
+<div class="links" id="links"></div>
+<button id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button></nav></div></header>
+<div id="menu" aria-label="Mobile menu"></div>
+<main id="app"></main>
+<footer><div class="wrap" id="foot"></div></footer>
+
+<script>
+var CONFIG={
+email:"info@elitebusinessolution.com",
+linkedin:"https://www.linkedin.com/company/elite-management-firm",
+instagram:"", /* add URL when live */
+showInstagramComingSoon:true,
+showSampleBadge:true, /* set false once testimonials are real */
+steps:[["Understand","Which reports you need, who reads them and which decisions they support."],["Check your data","We review your sources and confirm what can be connected, cleaned or streamlined."],["Build and verify","Reports are built to your definitions and checked against your own books."],["Deliver and support","Reports arrive on your schedule, and we keep them running and improving."]],
+services:[
+{id:"mis-reports",nav:"MIS & Daily Reports",interest:"MIS & Business Intelligence",card:"Daily, weekly and monthly reports on a schedule.",ask:"“Send me the day’s numbers without anyone compiling them.”",
+h:"MIS reporting that arrives without anyone building it.",lead:"Daily, weekly and monthly reports built from your own data and delivered on schedule, so nobody downloads, merges or refreshes files by hand. Automation is confirmed against your data sources first.",
+why:["Downloading exports from accounting, bank and store systems","Merging many spreadsheets into one","Repairing formulas that break when a column moves","Refreshing pivots and checking totals","Emailing files and chasing who has read them"],
+gain:"The same report, built to your definitions, every period, with a short note when something in the data does not add up.",
+groups:{"Sales and revenue":["Daily sales with month-to-date and target pace","Revenue by product, customer and location","Target against achievement by team or branch","Enquiry-to-payment tracking"],"Profitability":["Gross margin by product and customer","Expense analysis by cost head","Budget against actual with commentary"],"Working capital":["Customer-wise ageing with credit limits","Payables plan for the week","Cash flow view for the coming weeks","Stock cover and slow-moving items"],"Management pack":["Monthly P&L, Balance Sheet and cash flow","KPI summary with period-on-period movement","Written commentary on the biggest movers"]},
+faq:[["What is MIS reporting?","Management Information System reports bring sales, costs and cash together on a regular schedule, so you can see performance and decide faster."],["Do we need to change our software?","No. We work from the tools you already use, once we have confirmed how the data can be accessed."]],rel:["power-bi","finance-automation","bookkeeping"]},
+{id:"power-bi",nav:"Power BI Dashboards",interest:"MIS & Business Intelligence",card:"Live dashboards you can filter and drill into.",ask:"“One screen for the whole business.”",
+h:"Power BI dashboards your whole team can read.",lead:"One live view of sales, margin, cash and customers. Filter by period, product or branch, then drill into the figures behind each number. Advanced Excel dashboards are available where they suit you better.",
+why:["Waiting for the monthly pack to spot a trend","Different people quoting different numbers","Rebuilding the same charts every month"],
+gain:"A dashboard that is already current when you open it, with each person seeing the part that matters to them.",
+groups:{"Executive view":["Revenue, margin and cash at a glance","Period-on-period movement","Flags for metrics that are off track"],"Sales and marketing":["Sales by product, channel and region","ROAS and CPA by campaign","Customer acquisition trends"],"Customers and subscriptions":["Retention and churn","Lifetime value and average order value","Subscriber and cohort views"],"Finance and operations":["Receivables and payables ageing","Budget against actual","Stock and fulfilment"]},
+faq:[["Power BI or Excel?","Power BI suits live, shared views. Advanced Excel suits teams who work in spreadsheets. We recommend one after seeing your data."],["Can people see only their own part?","Yes, access can be set up by role where the setup allows it."]],rel:["mis-reports","collections","finance-automation"]},
+{id:"collections",nav:"Collections & Reminders",interest:"Finance & Accounting",card:"Ageing reports and timely payment follow-up.",ask:"“Who owes us, and who is following up?”",
+h:"Know who owes you, and follow up on time.",lead:"Clear ageing reports and scheduled reminders help your team chase the right customers early, without manual tracking.",
+why:["Building ageing lists by hand","Forgetting who was already contacted","Finding out about overdue invoices too late"],
+gain:"A clear list of who to chase, when and why, with routine reminders handled for you.",
+groups:{"Visibility":["Customer-wise ageing","Credit limit and credit-days tracking","Last receipt and promised dates"],"Follow-up":["Scheduled reminder messages to customers","Call lists for accounts that need a person","Weekly collections summary for owners"]},
+note:"Reminders are sent only after you approve the wording and schedule, and depend on the channels your customers use.",
+faq:[["Will customers receive messages automatically?","Only after you approve the wording, timing and recipients."],["Which systems can this use?","Any system whose invoice and receipt data we can access. We confirm this in the data review."]],rel:["reconciliation","mis-reports","bookkeeping"]},
+{id:"reconciliation",nav:"Reconciliation",interest:"Finance & Accounting",card:"Matching done for you, differences flagged.",ask:"“Match it for me.”",
+h:"Reconciliations that match themselves, so you only see the differences.",lead:"We match your records on a schedule and bring only the unmatched items to a person for review.",
+why:["Ticking off bank lines one by one","Comparing ledgers side by side","Hunting for the one entry that does not tie"],
+gain:"Matched records, a short list of exceptions and the likely reason for each.",
+groups:{"Bank":["Statements matched to ledger entries","Unmatched items listed with likely reasons"],"Tax and statutory data (where applicable)":["Purchase records against filing data","Credit and liability comparisons"],"Parties":["Customer and supplier ledgers against statements","Intercompany balances"]},
+faq:[["How often can reconciliations run?","Daily, weekly or monthly, depending on your volumes and the data available."],["Who reviews the exceptions?","Our team reviews them first, then shares what needs your decision."]],rel:["finance-automation","bookkeeping","collections"]},
+{id:"finance-automation",nav:"Finance Automation",interest:"Finance & Accounting",card:"Month-end, documents and workflows, automated.",ask:"“Stop the manual data entry.”",
+h:"Month-end and routine finance work, taken off your team.",lead:"We automate consolidation, document capture and monthly reporting, with your team approving anything that touches the books.",
+why:["Typing bank statements and bills into the books","Consolidating branches and entities by hand","Chasing approvals over email"],
+gain:"Draft entries and packs prepared in advance, with exceptions flagged for review.",
+groups:{"Document processing":["Bank statements, bills and orders turned into draft entries","Approval before anything is posted","Exceptions flagged for review"],"Month-end":["Consolidation across entities and branches","P&L, Balance Sheet and cash flow pack","Budget against actual with variance commentary"],"Workflows":["Approval requests and reminders","Order, lead and vendor trackers","Alerts when data is missing"]},
+faq:[["Is AI document processing accurate?","It prepares drafts and your team approves each batch. We measure accuracy on your own documents before going live."],["Can you post directly to our books?","Only if you ask, and only after approval."]],rel:["reconciliation","mis-reports","fractional-cfo"]},
+{id:"bookkeeping",nav:"Bookkeeping & Compliance",interest:"Finance & Accounting",card:"Current books and prepared filings.",ask:"“Keep my books current.”",
+h:"Books you can trust, and filings prepared on time.",lead:"Reports are only as good as the books beneath them. We bring your records up to date and keep them there.",
+why:["Rebuilding records at year end","Unreconciled accounts","Scrambling before filing deadlines"],
+gain:"A monthly close, reconciled accounts and the compliance work that applies to you, prepared on schedule.",
+groups:{"Bookkeeping":["Day-to-day accounting","Bank and financial reconciliations","Monthly close and month-end reporting support","Profit & Loss and Balance Sheet preparation or review"],"Tax and compliance (where applicable)":["GST reconciliations and returns","TDS reconciliations and returns","Income tax support","Audit review and support"]},
+note:"Compliance services are subject to jurisdiction, scope, eligibility and applicable professional or regulatory requirements. We do not offer regulated work in every country, and scope is confirmed in writing first.",
+faq:[["Do you file returns in my country?","That depends on jurisdiction and scope. We confirm what we can and cannot do before any engagement."],["What if our books are behind?","We bring them current first, because reporting on out-of-date books is not reliable."]],rel:["reconciliation","mis-reports","fractional-cfo"]},
+{id:"fractional-cfo",nav:"Fractional CFO",interest:"Fractional CFO",card:"Strategic finance without a full-time hire.",ask:"“I need finance leadership.”",
+h:"Senior finance guidance, without a full-time hire.",lead:"Access strategic financial support in proportion to your needs, from regular reviews to hands-on planning.",
+why:["Making big decisions without a finance lead","Budgets and forecasts that nobody owns","Guessing which costs to cut"],
+gain:"A trusted finance partner who turns your numbers into plans and decisions.",
+groups:{"Plan":["Financial planning and budgeting","Cash flow forecasting","Scenario planning"],"Understand":["Business performance reviews","Profitability analysis","Cost optimisation analysis","Management reporting"],"Decide":["Financial decision support","Founder and business-owner advisory","Financial strategy"]},
+faq:[["How is this different from an accountant?","An accountant records and files. A fractional CFO plans, forecasts and advises on decisions."],["How much time is included?","Scope is shaped around your needs after a consultation."]],rel:["mis-reports","power-bi","finance-automation"]},
+{id:"virtual-assistant",nav:"Virtual Assistant",interest:"Virtual Assistant",card:"Reliable back-office help, shaped to your needs.",ask:"“Take the admin off my plate.”",
+h:"Reliable back-office help, shaped around your needs.",lead:"Hand over finance admin, data work and documentation, with a scope that flexes as your business does.",
+why:["Admin crowding out priority work","Messy spreadsheets and records","Processes that live in one person’s head"],
+gain:"Routine work done consistently, with your information organised and easy to find.",
+groups:{"Finance admin":["Finance administration","Reconciliation support","Reporting assistance"],"Operations":["Data management and spreadsheet support","Business administration","Process documentation","Operational support","Organising business information"]},
+faq:[["Can the scope change over time?","Yes. Scope is customised to your requirements and can be adjusted."],["Do you work in my time zone?","We confirm working hours and response times during the consultation."]],rel:["finance-automation","bookkeeping","mis-reports"]}],
+industries:[["Manufacturing",["Production against plan by shift","Rejection, wastage and cost per unit","Material shortage alerts"]],["Trading and distribution",["Dealer and customer-wise sales and outstanding","Stock by branch and slow-moving items","Credit limits and margins"]],["E-commerce and D2C",["ROAS, CPA and margin by channel","AOV, repeat rate and LTV","Inventory and cash flow planning"]],["Subscription businesses",["Active subscribers and churn","Retention by cohort","Revenue and renewal forecasts"]],["Services and projects",["Profit by project and client","Utilisation and headcount","Cash projection"]],["Startups and growing companies",["Founder reporting and investor updates","Burn, runway and budget tracking","Scenario planning"]]],
+packages:[
+{id:"Basic",name:"Basic",sub:"Essential Business Reporting",cta:"Enquire about Basic",items:["Monthly reporting support","Basic sales and expense summaries","Financial reporting overview","Cash flow monitoring and reporting","Excel reporting","Core business metrics","Periodic reporting support"]},
+{id:"Pro",name:"Pro",sub:"Business Performance & MIS",hl:true,cta:"Enquire about Pro",items:["Everything in Basic, where applicable","MIS dashboards","Power BI or Advanced Excel dashboards","KPI tracking and sales analysis","Profitability, cost and margin analysis","Business performance reporting","Monthly performance insights"]},
+{id:"Premium",name:"Premium",sub:"Strategic Finance Partner",cta:"Enquire about Premium",items:["Everything in Pro, where applicable","Cash flow forecasting","Budgeting and planning","Business performance review","Financial insights and founder reporting","Strategic finance support","Fractional CFO support, depending on scope"]},
+{id:"Custom",name:"Custom",sub:"Tailored Business Solutions",cta:"Discuss a Custom Package",items:["Designed after an initial consultation","Mix MIS dashboards, finance services, CFO support and Virtual Assistant support","Reporting and business analytics","Any other requirement"]}],
+testimonials:[
+{q:"Our monthly numbers used to take a week to pull together. Now we start the month already knowing where we stand.",n:"Client name",r:"Founder, D2C brand"},
+{q:"The dashboard finally gave our team one version of the truth. Meetings are shorter and decisions are faster.",n:"Client name",r:"Operations Head, services company"},
+{q:"Having finance guidance without hiring a full-time CFO made a real difference to our planning.",n:"Client name",r:"Owner, subscription business"}],
+faq:[["Do we need to buy or change software?","No. We work from the tools you already use, once we have confirmed how the data can be accessed."],["Which reports can you build?","Any report built from the same sources each period, such as sales, collections, margin, cash flow, stock and the monthly pack. We agree the list with you first."],["How do reports reach us?","By email, as Excel or PDF packs, or as live Power BI or Excel dashboards, at the schedule you choose."],["How do you access our data?","Through read-only access, scheduled exports or file sharing, whichever suits your systems. We change nothing in your books unless you ask us to."],["How do we know the numbers are right?","Every report is checked against your own books before it goes live, and we repeat the check on each refresh."],["What does it cost?","Pricing is enquiry-based. After a short consultation you receive scope and fees in writing before anything starts."],["Do you work with clients worldwide?","Yes. We work remotely. Compliance work depends on jurisdiction and scope."],["Is our data safe?","Access is limited to the team on your account, and we sign an NDA on request."]]
+};
+var $=function(s){return document.querySelector(s)},app=$("#app"),pend=null;
+function li(a){return a.map(function(x){return"<li>"+x+"</li>"}).join("")}
+function cta(t,i,c){return'<a class="btn '+(c||"")+'" href="#contact" data-interest="'+i+'">'+t+'</a>'}
+function svcOf(k){return CONFIG.services.filter(function(s){return s.id===k})[0]}
+function faq(a){return a.map(function(x){return"<details class=\"rv\"><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>"}).join("")}
+function steps(){return'<section><div class="wrap"><div class="head rv"><span class="eyebrow">Method</span><h2>How an engagement works.</h2></div><div class="steps rv">'+CONFIG.steps.map(function(s){return"<div class=\"step\"><h3>"+s[0]+"</h3><p>"+s[1]+"</p></div>"}).join("")+'</div></div></section>'}
+function final(h,p,i){return'<section class="alt final"><div class="wrap"><h2 class="rv">'+h+'</h2><p class="rv">'+p+'</p><div class="cta-row rv">'+cta("Book a consultation",i||"General enquiry")+'<a class="btn ghost" href="#packages">View packages</a></div></div></section>'}
+function tts(){return'<section class="alt"><div class="wrap"><div class="head rv"><span class="eyebrow">Client voices</span><h2>What clients say.</h2></div><div class="cards">'+CONFIG.testimonials.map(function(t){return'<figure class="tt rv">'+(CONFIG.showSampleBadge?'<span class="badge">Sample testimonial</span>':'')+'<q>'+t.q+'</q><b>'+t.n+'</b><span>'+t.r+'</span></figure>'}).join("")+'</div></div></section>'}
+var V={};
+V.home=function(){var t=[["Numbers in too many places","One clear view","Sales, ads, stock and accounts each tell a different story.","Your data is consolidated into dashboards you can trust."],["Reports arrive too late","Reporting on rhythm","By the time you see last month, the next one is half over.","Monthly management reports delivered consistently."],["Profit is a guess","Profit made visible","Revenue is clear, but margin by product or channel is not.","Margin, cost and profitability analysed by product and channel."],["Spend without proof","Spend tied to results","Marketing costs rise, and it is hard to link them to results.","ROAS and CPA reporting shows what your marketing earns."],["No time for admin","Admin off your plate","Reconciliations and reporting pull you away from running the business.","Finance and reporting support keeps the books decision-ready."],["Decisions on instinct","Decisions with KPIs","Without clear KPIs, every big call feels like a risk.","Tracked KPIs and clear insights back every big call."]];
+return'<section class="hero"><div class="wrap"><div><span class="brand-big">ELITE BUSINESS SOLUTIONS</span><h1>Data, <em>composed.</em></h1><p class="lead">We connect to the tools you already use, check every figure against your books, and deliver clear reports and dashboards to your inbox, your screen and your team. Set up once, then run and improved for you.</p><div class="cta-row">'+cta("Book a consultation","MIS & Business Intelligence")+'<a class="btn ghost" href="#mis-reports">Explore MIS services</a></div><div class="trust"><span>No new software to buy</span><span>Read-only access where possible</span><span>Totals checked against your books</span></div></div><div class="bars" aria-hidden="true"><i></i><i></i><i></i></div></div></section>'+
+'<section class="alt"><div class="wrap"><div class="head rv"><span class="eyebrow">Connects to what you use</span><h2>Your tools stay. Your reporting improves.</h2></div><div class="chips rv">'+["Excel","Google Sheets","Xero","QuickBooks","Zoho","Tally","SAP","Shopify","Bank statements","Your own ERP or CRM"].map(function(x){return'<span class="chip">'+x+'</span>'}).join("")+'</div><p class="fine rv">What can be connected is confirmed in a data review, before any commitment.</p></div></section>'+
+'<section><div class="wrap"><div class="head rv"><span class="eyebrow">What owners ask us for</span><h2>Eight requests we hear most.</h2><p>Each one runs on the data you already have. Pick the one that sounds like yours.</p></div><div class="cards">'+CONFIG.services.map(function(s){return'<a class="card rv" href="#'+s.id+'"><h3 class="serif">'+s.ask+'</h3><p>'+s.card+'</p><span class="more">'+s.nav+'</span></a>'}).join("")+'</div></div></section>'+
+'<section class="alt"><div class="wrap"><div class="head rv"><span class="eyebrow">How it reaches you</span><h2>On a screen, in your inbox, or in Excel.</h2></div><div class="cards"><div class="card rv"><h3 class="serif">Live dashboards</h3><p>Power BI or Excel dashboards you can filter and drill into, on a laptop or phone.</p></div><div class="card rv"><h3 class="serif">Email summaries</h3><p>A short summary at the time you set, with alerts when something needs attention.</p></div><div class="card rv"><h3 class="serif">Excel and PDF packs</h3><p>Day-end and month-end files in your own format.</p></div><div class="card rv"><h3 class="serif">Role-based views</h3><p>Each person sees the part of the business that is theirs.</p></div></div></div></section>'+
+'<section><div class="wrap"><div class="head rv"><span class="eyebrow">Common challenges</span><h2>Sound familiar? See what changes.</h2><p>Switch the view to compare everyday business challenges before and after working with EBS.</p></div><div class="toggle rv" role="group" aria-label="Compare before and after"><button id="bChaos" aria-pressed="true">Before EBS</button><button id="bOrder" aria-pressed="false">With EBS</button></div><div class="board chaos rv" id="board">'+t.map(function(x){return'<div class="tile"><h3 data-a="'+x[0]+'" data-b="'+x[1]+'">'+x[0]+'</h3><p data-a="'+x[2]+'" data-b="'+x[3]+'">'+x[2]+'</p></div>'}).join("")+'</div></div></section>'+
+'<section class="alt"><div class="wrap"><div class="head rv"><span class="eyebrow">Who we serve</span><h2>Built for owners who want clarity.</h2></div><div class="chips rv"><span class="chip">Small and medium-sized businesses</span><span class="chip">E-commerce and D2C brands</span><span class="chip">Subscription businesses</span><span class="chip">Startups and growing companies</span><span class="chip">Founders and owners</span><span class="chip">Teams needing outsourced expertise</span></div><p class="fine rv"><a href="#industries" style="color:var(--em)">See reports by industry</a></p></div></section>'+
+steps()+
+'<section class="alt"><div class="wrap"><div class="head rv"><span class="eyebrow">Your data</span><h2>Handled with care.</h2></div><div class="cards"><div class="card rv"><h3 class="serif">Read-only where possible</h3><p>We read from your systems. Nothing is written back unless you ask us to post entries.</p></div><div class="card rv"><h3 class="serif">Approval first</h3><p>Where we prepare entries, your team approves each batch.</p></div><div class="card rv"><h3 class="serif">Checked against your books</h3><p>Reports are tied to your own totals before they go live.</p></div><div class="card rv"><h3 class="serif">Confidential</h3><p>Seen only by the team on your account. NDA on request.</p></div></div></div></section>'+
+tts()+'<section><div class="wrap" style="max-width:860px"><div class="head rv"><span class="eyebrow">FAQ</span><h2>Before you get in touch.</h2></div>'+faq(CONFIG.faq)+'</div></section>'+
+final("Tell us which numbers you want to see.","Describe the report you wait for or the work your team repeats by hand. We reply by email with scope and fees in writing before anything begins.","MIS & Business Intelligence")};
+V.service=function(s){return'<section class="pg"><div class="wrap"><p class="crumbs"><a href="#home">Home</a> / '+s.nav+'</p><span class="eyebrow">'+s.nav+'</span><h1 class="sv">'+s.h+'</h1><p class="lead">'+s.lead+'</p><div class="cta-row">'+cta("Book a consultation",s.interest)+'<a class="btn ghost" href="#packages">View packages</a></div></div></section>'+
+'<section class="alt"><div class="wrap two"><div class="rv"><span class="eyebrow">What changes</span><h2>What your team stops doing.</h2><ul class="tick">'+li(s.why)+'</ul></div><div class="rv"><span class="eyebrow">What you get instead</span><h2>Clarity, on schedule.</h2><p>'+s.gain+'</p></div></div></section>'+
+'<section><div class="wrap"><div class="head rv"><span class="eyebrow">What you may receive</span><h2>Typical deliverables.</h2><p>Scope is agreed with you in writing before work starts.</p></div><div class="grid rv">'+Object.keys(s.groups).map(function(k){return"<div><h3>"+k+"</h3><ul class=\"tick\">"+li(s.groups[k])+"</ul></div>"}).join("")+'</div>'+(s.note?'<div class="note rv">'+s.note+'</div>':'')+'</div></section>'+steps()+
+'<section class="alt"><div class="wrap" style="max-width:860px"><div class="head rv"><span class="eyebrow">FAQ</span><h2>Questions about this service.</h2></div>'+faq(s.faq)+'</div></section>'+
+'<section><div class="wrap"><div class="head rv"><span class="eyebrow">Related</span><h2>Where this connects.</h2></div><div class="cards">'+s.rel.map(function(k){var r=svcOf(k);return'<a class="card rv" href="#'+r.id+'"><h3 class="serif">'+r.nav+'</h3><p>'+r.card+'</p><span class="more">Read more</span></a>'}).join("")+'</div></div></section>'+final("Ready to talk about "+s.nav.toLowerCase()+"?","Book a consultation and we will confirm scope, data sources and next steps in writing.",s.interest)};
+V.industries=function(){return'<section class="pg"><div class="wrap"><p class="crumbs"><a href="#home">Home</a> / Industries</p><span class="eyebrow">Industries</span><h1 class="sv">The numbers that matter differ in every business.</h1><p class="lead">A few of the things we are asked to track.</p></div></section><section class="alt"><div class="wrap"><div class="grid rv">'+CONFIG.industries.map(function(x){return"<div><h3>"+x[0]+"</h3><ul class=\"tick\">"+li(x[1])+"</ul></div>"}).join("")+'</div></div></section>'+final("Don’t see your industry?","Most reports are built from the same few sources. Tell us what you track and we will shape it to your business.")};
+V.packages=function(){return'<section class="pg"><div class="wrap"><p class="crumbs"><a href="#home">Home</a> / Packages</p><span class="eyebrow">Packages</span><h1 class="sv">Choose a starting point.</h1><p class="lead">Every package is shaped around your needs. Pricing is enquiry-based, with no fixed rates.</p></div></section><section class="alt"><div class="wrap"><div class="packs rv">'+CONFIG.packages.map(function(p){return'<article class="pack'+(p.hl?' hl':'')+'"><span class="eyebrow">'+p.sub+'</span><h3 class="serif" style="font-size:2rem;margin:0">'+p.name+'</h3><ul>'+li(p.items)+'</ul><a class="btn'+(p.hl?'':' ghost')+'" href="#contact" data-interest="Package: '+p.id+'">'+p.cta+'</a></article>'}).join("")+'</div><p class="fine">Inclusions are indicative and confirmed after consultation. Where applicable, higher packages include those below them. No results are guaranteed.</p></div></section>'};
+V.contact=function(){var o=["General enquiry"].concat(CONFIG.packages.map(function(p){return"Package: "+p.id}),["MIS & Business Intelligence","Finance & Accounting","Fractional CFO","Virtual Assistant"]).map(function(x){return"<option>"+x+"</option>"}).join("");
+return'<section class="pg"><div class="wrap consult"><div><p class="crumbs"><a href="#home">Home</a> / Contact</p><span class="eyebrow">Consultation</span><h1 class="sv">Tell us what you need.</h1><p>Share a few details and we will reply by email to arrange a consultation. Your selected package or service is filled in for you.</p><p>Email: <a href="mailto:'+CONFIG.email+'">'+CONFIG.email+'</a></p><p>We work remotely with businesses worldwide.</p></div><form id="enq"><div><label for="n">Name</label><input id="n" required autocomplete="name"></div><div><label for="e">Email</label><input id="e" type="email" required autocomplete="email"></div><div><label for="c">Company</label><input id="c" autocomplete="organization"></div><div><label for="i">Interested in</label><select id="i">'+o+'</select></div><div class="full"><label for="m">What would you like to understand better?</label><textarea id="m"></textarea></div><div class="full"><button class="btn" type="submit">Send enquiry</button><div class="ok" id="ok" role="status">Your email app should open with your enquiry ready to send.</div></div></form></div></section><section class="alt"><div class="wrap" style="max-width:860px"><div class="head rv"><span class="eyebrow">FAQ</span><h2>Before you get in touch.</h2></div>'+faq(CONFIG.faq)+'</div></section>'};
+var T={home:"Elite Business Solutions | MIS, Power BI Dashboards & Finance Support",industries:"Reports by Industry | Elite Business Solutions",packages:"Packages | Elite Business Solutions",contact:"Contact & Consultation | Elite Business Solutions"};
+function route(){var k=(location.hash||"#home").slice(1),s=svcOf(k),h;
+if(s){h=V.service(s);document.title=s.nav+" | Elite Business Solutions"}else if(V[k]&&k!=="service"){h=V[k]();document.title=T[k]}else{k="home";h=V.home();document.title=T.home}
+app.innerHTML=h;scrollTo(0,0);
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.1});
+app.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+var bd=$("#board");if(bd){var bc=$("#bChaos"),bo=$("#bOrder");var m=function(o){bd.className="board "+(o?"order":"chaos")+" rv in";bc.setAttribute("aria-pressed",!o);bo.setAttribute("aria-pressed",o);bd.querySelectorAll("[data-a]").forEach(function(el){el.textContent=o?el.dataset.b:el.dataset.a})};bc.onclick=function(){m(false)};bo.onclick=function(){m(true)}}
+var f=$("#enq");if(f){if(pend)$("#i").value=pend;f.addEventListener("submit",function(e){e.preventDefault();var b="Name: "+$("#n").value+"\nEmail: "+$("#e").value+"\nCompany: "+$("#c").value+"\nInterested in: "+$("#i").value+"\n\n"+$("#m").value;$("#ok").style.display="block";location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("Enquiry: "+$("#i").value)+"&body="+encodeURIComponent(b)})}
+$("#menu").classList.remove("open");$("#menuBtn").setAttribute("aria-expanded","false");$("#menuBtn").textContent="Menu"}
+document.addEventListener("click",function(e){var a=e.target.closest("[data-interest]");if(a){pend=a.dataset.interest;var s=$("#i");if(s)s.value=pend}});
+/* nav + footer */
+var sl=CONFIG.services.map(function(s){return'<a href="#'+s.id+'">'+s.nav+'</a>'}).join("");
+$("#links").innerHTML='<div class="dd"><button class="ddb" aria-haspopup="true">Services</button><div class="ddm">'+sl+'</div></div><a href="#industries">Industries</a><a href="#packages">Packages</a><a href="#contact">Contact</a><a class="btn sm" href="#contact" data-interest="General enquiry">Book a consultation</a>';
+$("#menu").innerHTML=sl+'<a href="#industries">Industries</a><a href="#packages">Packages</a><a href="#contact">Contact</a>';
+$("#menuBtn").onclick=function(){var o=$("#menu").classList.toggle("open");this.setAttribute("aria-expanded",o);this.textContent=o?"Close":"Menu"};
+var so='<a href="mailto:'+CONFIG.email+'">'+CONFIG.email+'</a><a href="'+CONFIG.linkedin+'" target="_blank" rel="noopener">LinkedIn</a>';
+if(CONFIG.instagram)so+='<a href="'+CONFIG.instagram+'" target="_blank" rel="noopener">Instagram</a>';else if(CONFIG.showInstagramComingSoon)so+='<span>Instagram: Coming Soon</span>';
+$("#foot").innerHTML='<div><span class="serif" style="font-size:2rem;letter-spacing:.14em;color:var(--ink);display:block;margin-bottom:12px">ELITE BUSINESS SOLUTIONS</span><p>MIS, dashboards and finance support for businesses worldwide, delivered remotely.</p><p style="font-size:.8rem">Compliance services are subject to jurisdiction, scope, eligibility and applicable professional or regulatory requirements. All work is scoped and quoted in writing after a discussion.</p><p>© 2026 Elite Business Solutions. All rights reserved.</p></div><div><h4>Services</h4>'+sl+'</div><div><h4>Contact</h4>'+so+'<a href="#packages">Packages</a><a href="#industries">Industries</a></div>';
+addEventListener("hashchange",route);route();
+</script>
+</body>
+</html>
